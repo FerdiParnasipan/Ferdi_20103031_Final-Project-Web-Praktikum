@@ -17,7 +17,8 @@ class RouteServiceProvider extends ServiceProvider
      *
      * @var string
      */
-    public const HOME = '/v1';
+    public const HOME = '/';
+    //artinya adalah ketika sudah login atau register maka akan kembali ke halaman utama
 
     /**
      * Define your route model bindings, pattern filters, and other route configuration.

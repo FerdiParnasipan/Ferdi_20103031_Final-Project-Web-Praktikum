@@ -65,9 +65,12 @@ class RegisterController extends Controller
     protected function create(array $data)
     {
         return User::create([
+            'role'=> 'admin',
+            //menentukan role apa ketika setelah register, apakah admin atau user
             'name' => $data['name'],
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
+            //password akan dienkripsi dan sulid untuk ditebak
         ]);
     }
 }
